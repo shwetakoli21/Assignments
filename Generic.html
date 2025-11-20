@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generics in Java — Definition & Introduction</title>
+</head>
+<body>
+  
+    <h1>Generics in Java — Definition & Introduction</h1>
+    <h2>Introduction</h2>
+    <p>Introduced in <strong>Java 5</strong>, generics enable <em>parameterized types</em> so a single class or method can work with different
+         data types. For example, the Java Collections framework uses generics to ensure that containers (like <code>ArrayList</code> and <code>HashMap</code>)
+          store only the intended type of elements. Generics achieve two main goals:</p>
+
+    <h2>Definition</h2>
+    <p>Generics in Java are a language feature that allows classes, interfaces, and methods to be parameterized by types. Using generics, 
+        programmers can write code that operates on objects of various types while providing compile-time type safety and eliminating the 
+        need for explicit type casts.</p>
+    <ol>
+      <li><strong>Type Safety:</strong> Errors such as invalid type assignments are caught at compile time rather than at runtime.</li>
+      <li><strong>Reusability:</strong> The same code can be reused for different data types without duplication.</li>
+    </ol>
+
+     <h1>Wrapper Classes</h1>
+    <h2>1. Introduction</h2>
+    <p>
+        Wrapper classes in Java are used to represent primitive data types as objects. 
+        They allow primitive values to be used in places where only objects are allowed, 
+        such as Collections and Generics.
+    </p>
+     <h2>2.Definition</h2>
+    <p>
+        Wrapper classes are predefined classes in Java that wrap (enclose) a primitive 
+        value inside an object. Each primitive type has a corresponding wrapper class.
+    </p>
+
+    <h2>3. Purpose of Wrapper Classes</h2>
+    <ul>
+        <li>Convert primitive data types into objects.</li>
+        <li>Enable use of primitives in Collections (like ArrayList, HashMap).</li>
+        <li>Support autoboxing and unboxing.</li>
+        <li>Provide utility methods such as parsing and conversion.</li>
+        <li>Allow null values, which primitives cannot represent.</li>
+    </ul>
+
+    <h2>4. Types of Wrapper Classes</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Primitive Type</th>
+            <th>Wrapper Class</th>
+        </tr>
+        <tr><td>byte</td><td>Byte</td></tr>
+        <tr><td>short</td><td>Short</td></tr>
+        <tr><td>int</td><td>Integer</td></tr>
+        <tr><td>long</td><td>Long</td></tr>
+        <tr><td>float</td><td>Float</td></tr>
+        <tr><td>double</td><td>Double</td></tr>
+        <tr><td>char</td><td>Character</td></tr>
+        <tr><td>boolean</td><td>Boolean</td></tr>
+    </table>
+
+    <h1>Collections in Java</h1>
+
+    <h2>Definition</h2>
+    <p>  Collection is set of object stored in single variable.</p>
+    <p> A <strong>Collection</strong> in Java is a framework that provides 
+        classes and interfaces to store, manage, and manipulate groups of objects efficiently. 
+        A collection is a group of objects (called elements) stored together in a single unit.
+    </p>
+
+    <h2>Why Collections?</h2>
+    <ul>
+        <li>Arrays have fixed size and limited functionality.</li>
+        <li>Cannot easily perform searching, sorting, or data manipulation.</li>
+        <li>Collections framework provides dynamic and flexible data structures.</li>
+    </ul>
+
+    <h2>Main Interfaces</h2>
+    <h3>1.List</h3>
+    <ul>
+        <li>Stores elements in <strong>order</strong>.</li>
+        <li>Allows <strong>duplicate</strong> elements.</li>
+        <li>Examples: ArrayList, LinkedList, Vector</li>
+    </ul>
+
+    <h3>2.Set</h3>
+    <ul>
+        <li>Does not allow <strong>duplicate</strong> elements.</li>
+        <li>No guaranteed order.</li>
+        <li>Examples: HashSet, LinkedHashSet, TreeSet</li>
+    </ul>
+
+    <h3>3.Map</h3>
+    <ul>
+        <li>Stores data in <strong>key–value</strong> pairs.</li>
+        <li>Keys must be <strong>unique</strong>.</li>
+        <li>Examples: HashMap, LinkedHashMap, TreeMap</li>
+    </ul>
+
+    <h2>Advantages of Collections</h2>
+    <ul>
+        <li>Dynamic size</li>
+        <li>Built-in methods for searching, sorting, and iteration</li>
+        <li>Easy data manipulation</li>
+        <li>Memory efficient</li>
+        <li>Supports different data structures</li>
+    </ul>
+
+    <h2>Hierarchy of Collections</h2>
+    <pre>
+Collection
+   |-- List
+   |-- Set
+   |-- Queue
+Map (Separate hierarchy)
+    </pre>
+    <h1>Features of java</h1>
+    <p>object oriented,platfrom independent, secure,multithreading,</p>
+    
+    <p>Legacy classes are classes that were part of early versions of Java (before Java 2) 
+    and existed before the Collections Framework was introduced.</p>
+</body>
+</html>
